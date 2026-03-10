@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3CIME Water Solutions | Disruptive Water Treatment Technologies</title>
+  <meta name="description" content="3CIME Water Solutions — Commercial representation of international companies with cutting-edge equipment for water and wastewater treatment in Brazil." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="../images/logo-3cime.png" alt="3CIME Water Solutions" class="logo-img logo-img--nav" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+
+        <!-- DROPDOWN SOLUTIONS -->
+        <li class="nav-item-dropdown" id="navDropdown">
+          <a href="#solutions" class="nav-link nav-link-dropdown" id="navDropdownTrigger">
+            Solutions <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-panel" id="navDropdownPanel" role="menu">
+            <a href="#solutions" class="dropdown-nicho" role="menuitem">
+              <div class="dropdown-nicho-icon icon-filtracao"><i class="fa-solid fa-filter"></i></div>
+              <span class="dropdown-nicho-title">Cloth Media<br>Filtration</span>
+              <span class="dropdown-nicho-sub">7 technologies · AquaDisk®, MegaDisk®, AquaDrum®…</span>
+              <span class="dropdown-nicho-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#solutions" class="dropdown-nicho" role="menuitem">
+              <div class="dropdown-nicho-icon icon-membranas"><i class="fa-solid fa-circle-notch"></i></div>
+              <span class="dropdown-nicho-title">Membrane<br>Systems</span>
+              <span class="dropdown-nicho-sub">3 technologies · MBR, MultiBore®, AquaMB…</span>
+              <span class="dropdown-nicho-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#solutions" class="dropdown-nicho" role="menuitem">
+              <div class="dropdown-nicho-icon icon-espessamento"><i class="fa-solid fa-compress-arrows-alt"></i></div>
+              <span class="dropdown-nicho-title">Sludge<br>Thickening</span>
+              <span class="dropdown-nicho-sub">2 technologies · GBT OMEGA, DAF…</span>
+              <span class="dropdown-nicho-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#solutions" class="dropdown-nicho" role="menuitem">
+              <div class="dropdown-nicho-icon icon-desaguamento"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <span class="dropdown-nicho-title">Sludge<br>Dewatering</span>
+              <span class="dropdown-nicho-sub">3 technologies · Belt Press, Screw, Dryer…</span>
+              <span class="dropdown-nicho-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </li>
+
+        <li><a href="#differentials" class="nav-link">Why Us</a></li>
+        <li><a href="#partners" class="nav-link">Partners</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+      </ul>
+
+      <!-- Language switcher -->
+      <div class="lang-switcher">
+        <a href="../index.html" class="lang-btn" title="Português">🇧🇷 PT</a>
+        <a href="index.html" class="lang-btn lang-btn--active" title="English">🇺🇸 EN</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="water-animation">
+        <div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div>
+        <div class="bubble b4"></div><div class="bubble b5"></div>
+        <div class="wave wave1"></div><div class="wave wave2"></div><div class="wave wave3"></div>
+      </div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+        <i class="fas fa-award"></i> Disruptive Water Treatment Technologies
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+        Shaping the Future of<br />
+        <span class="gradient-text">Water &amp; Wastewater Treatment</span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="350">
+        We represent the world's most innovative water treatment companies — bringing proven international solutions aligned with the real demands of the Brazilian market.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+        <a href="#solutions" class="btn btn-primary">
+          <i class="fas fa-water"></i> Explore Solutions
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="650">
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span><span>+</span>
+          <span class="stat-label">International Partners</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">0</span><span>+</span>
+          <span class="stat-label">Projects Deployed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="98">0</span><span>%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><div class="scroll-indicator"><span></span></div></a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="sobre" id="about">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual" data-aos="fade-right">
+          <div class="sobre-card-main">
+            <div class="card-icon-large"><i class="fas fa-globe-americas"></i></div>
+            <h3>Global Presence,<br/>Local Impact</h3>
+            <p>Connecting international technology to the needs of the Brazilian market</p>
+            <div class="about-tag-list">
+              <span class="tag"><i class="fas fa-check-circle"></i> ISO Certified</span>
+              <span class="tag"><i class="fas fa-check-circle"></i> Technical Support</span>
+              <span class="tag"><i class="fas fa-check-circle"></i> Homologations</span>
+            </div>
+          </div>
+          <div class="sobre-card-float c1"><i class="fas fa-atom"></i><span>Continuous Innovation</span></div>
+          <div class="sobre-card-float c2"><i class="fas fa-leaf"></i><span>Sustainability</span></div>
+          <div class="sobre-card-float c3"><i class="fas fa-shield-alt"></i><span>Guaranteed Quality</span></div>
+        </div>
+
+        <div class="sobre-content" data-aos="fade-left">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title"><span class="gradient-text">3CIME</span> is the bridge between global technology and the national market</h2>
+          <p class="sobre-text">
+            We are a commercial representation company specialized in connecting Brazil to the most advanced international technologies for water and wastewater treatment.
+          </p>
+          <p class="sobre-text">
+            Our mission goes beyond simple commercialization: we identify the <strong>real gaps in the market</strong> and search the world for truly disruptive solutions that address these demands with efficiency, sustainability, and unmatched cost-effectiveness.
+          </p>
+          <div class="sobre-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-search"></i></div>
+              <div class="pillar-text">
+                <h4>We Identify</h4>
+                <p>We map the gaps and real needs of the sanitation market</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-globe"></i></div>
+              <div class="pillar-text">
+                <h4>We Connect</h4>
+                <p>We bring the best international technologies to Brazil</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-rocket"></i></div>
+              <div class="pillar-text">
+                <h4>We Implement</h4>
+                <p>We ensure full technical support from start to finish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTIONS ===== -->
+  <section class="solucoes" id="solutions">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Technology <span class="gradient-text">Portfolio</span></h2>
+        <p class="section-desc">We represent global partners with proven solutions for every stage of water and wastewater treatment</p>
+      </div>
+
+      <div class="portfolio-grid" data-aos="fade-up">
+
+        <!-- CARD 1: CLOTH MEDIA FILTRATION -->
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card-header">
+            <div class="portfolio-card-icon"><i class="fas fa-filter"></i></div>
+            <div class="portfolio-card-meta">
+              <h3 class="portfolio-card-title">Cloth Media Filtration</h3>
+            </div>
+          </div>
+          <p class="portfolio-card-desc">
+            Disc and drum cloth media filtration for tertiary polishing, advanced primary treatment, and stormwater control. Scalable solutions for any plant size.
+          </p>
+          <div class="portfolio-card-tags">
+            <span><i class="fas fa-check-circle"></i> Automatic backwash</span>
+            <span><i class="fas fa-check-circle"></i> TSS &lt; 10 mg/L</span>
+            <span><i class="fas fa-check-circle"></i> Low energy use</span>
+          </div>
+          <div class="portfolio-products">
+            <div class="portfolio-products-label">7 technologies available</div>
+            <ul class="portfolio-products-list">
+              <li>
+                <a href="../produtos/aquadisk.html">
+                  <span class="pp-name">AquaDisk®</span>
+                  <span class="pp-desc">Disc filter for concrete channel</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aqua-minidisk.html">
+                  <span class="pp-name">Aqua MiniDisk®</span>
+                  <span class="pp-desc">Compact version for small WWTPs</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li class="pp-highlight">
+                <a href="../produtos/aqua-megadisk.html">
+                  <span class="pp-badge">High Capacity</span>
+                  <span class="pp-name">Aqua MegaDisk®</span>
+                  <span class="pp-desc">Large scale — high municipal flow</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aquaprime.html">
+                  <span class="pp-name">AquaPrime®</span>
+                  <span class="pp-desc">Advanced primary treatment</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aquastorm.html">
+                  <span class="pp-name">AquaStorm™</span>
+                  <span class="pp-desc">Stormwater and urban runoff</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aqua-diamond.html">
+                  <span class="pp-name">Aqua Diamond®</span>
+                  <span class="pp-desc">Diamond geometry — max filtration area</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aquadrum.html">
+                  <span class="pp-name">AquaDrum®</span>
+                  <span class="pp-desc">Self-contained rotary drum filter</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 2: MEMBRANE SYSTEMS -->
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card-header">
+            <div class="portfolio-card-icon"><i class="fas fa-circle-notch"></i></div>
+            <div class="portfolio-card-meta">
+              <h3 class="portfolio-card-title">Membrane Systems</h3>
+            </div>
+          </div>
+          <p class="portfolio-card-desc">
+            Ultrafiltration, membrane bioreactors, and multi-barrier systems for the highest effluent quality — ideal for direct reuse and applications requiring strict standards.
+          </p>
+          <div class="portfolio-card-tags">
+            <span><i class="fas fa-check-circle"></i> Direct reuse</span>
+            <span><i class="fas fa-check-circle"></i> Pathogen removal</span>
+            <span><i class="fas fa-check-circle"></i> Reduced footprint</span>
+          </div>
+          <div class="portfolio-products">
+            <div class="portfolio-products-label">3 technologies available</div>
+            <ul class="portfolio-products-list">
+              <li class="pp-highlight">
+                <a href="../produtos/aquamb-process.html">
+                  <span class="pp-badge">Multi-Barrier</span>
+                  <span class="pp-name">AquaMB Process®</span>
+                  <span class="pp-desc">Cloth filtration + ultrafiltration integrated</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li class="pp-highlight">
+                <a href="../produtos/aqua-mbr.html">
+                  <span class="pp-badge">MBR</span>
+                  <span class="pp-name">Aqua-Aerobic® MBR</span>
+                  <span class="pp-desc">Integrated membrane bioreactor</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/aqua-multibore.html">
+                  <span class="pp-name">Aqua MultiBore® <em>C &amp; P Series</em></span>
+                  <span class="pp-desc">Ceramic and polymeric membranes</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 3: SLUDGE THICKENING -->
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card-header">
+            <div class="portfolio-card-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+            <div class="portfolio-card-meta">
+              <h3 class="portfolio-card-title">Sludge Thickening</h3>
+            </div>
+          </div>
+          <p class="portfolio-card-desc">
+            Sludge thickening equipment for municipal and industrial WWTPs — gravity belt thickeners and dissolved air flotation units to increase dry solids content before dewatering or digestion.
+          </p>
+          <div class="portfolio-card-tags">
+            <span><i class="fas fa-check-circle"></i> DS output ≥ 4–6%</span>
+            <span><i class="fas fa-check-circle"></i>Capture &gt; 95% solids</span>
+            <span><i class="fas fa-check-circle"></i> SS 304L / 316L</span>
+          </div>
+          <div class="portfolio-products">
+            <div class="portfolio-products-label">2 technologies available</div>
+            <ul class="portfolio-products-list">
+              <li class="pp-highlight">
+                <a href="../produtos/emo-espessamento-lodo.html">
+                  <span class="pp-badge">OMEGA Series</span>
+                  <span class="pp-name">GBT — Gravity Belt Thickener</span>
+                  <span class="pp-desc">OMEGA SD · MD · LD · THC — up to 200 m³/h</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/emo-espessamento-lodo.html#daf">
+                  <span class="pp-name">DAF — Dissolved Air Flotation</span>
+                  <span class="pp-desc">ALPHA · DELTA · GAMMA — up to 650 m³/h</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CARD 4: SLUDGE DEWATERING -->
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-card-header">
+            <div class="portfolio-card-icon" style="background:linear-gradient(135deg,#ea580c,#f97316);">
+              <i class="fas fa-fire-flame-curved"></i>
+            </div>
+            <div class="portfolio-card-meta">
+              <h3 class="portfolio-card-title">Sludge Dewatering</h3>
+            </div>
+          </div>
+          <p class="portfolio-card-desc">
+            Mechanical dewatering and thermal drying solutions — reducing sludge volume and mass to simplify transport, final disposal, and energy recovery at municipal and industrial WWTPs.
+          </p>
+          <div class="portfolio-card-tags">
+            <span><i class="fas fa-check-circle"></i> DS output up to 92%</span>
+            <span><i class="fas fa-check-circle"></i> Volume reduction –80%</span>
+            <span><i class="fas fa-check-circle"></i> Continuous operation</span>
+          </div>
+          <div class="portfolio-products">
+            <div class="portfolio-products-label">3 technologies available</div>
+            <ul class="portfolio-products-list">
+              <li class="pp-highlight">
+                <a href="../produtos/emo-desaguamento-bfp.html">
+                  <span class="pp-badge">OMEGA Series</span>
+                  <span class="pp-name">Belt Filter Press</span>
+                  <span class="pp-desc">OMEGA 100000 · NHP · CC — up to 28% DS</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="../produtos/emo-desaguamento-screw.html">
+                  <span class="pp-name">Screw Press</span>
+                  <span class="pp-desc">Silent, compact, low energy consumption</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+              <li class="pp-highlight">
+                <a href="../produtos/emo-desaguamento-dryer.html">
+                  <span class="pp-badge">Low Temp.</span>
+                  <span class="pp-name">Sludge Dryer</span>
+                  <span class="pp-desc">EAHD · EAWD — up to 92% DS / &lt;70°C</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFFERENTIALS ===== -->
+  <section class="diferenciais" id="differentials">
+    <div class="container">
+      <div class="diferenciais-inner">
+        <div class="diferenciais-content" data-aos="fade-right">
+          <div class="section-label light">Why Choose 3CIME</div>
+          <h2 class="section-title light">Our <span class="gradient-text-light">Differentials</span></h2>
+          <p class="section-desc light">We are not just distributors. We are strategic partners who deeply understand the needs of the sector.</p>
+
+          <div class="diff-items">
+            <div class="diff-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="diff-num">01</div>
+              <div class="diff-info">
+                <h4>Rigorous Technology Curation</h4>
+                <p>We represent only proven technologies aligned with real market demands — no trends, no empty promises.</p>
+              </div>
+            </div>
+            <div class="diff-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="diff-num">02</div>
+              <div class="diff-info">
+                <h4>Strategic Market Vision</h4>
+                <p>We continuously monitor gaps in the sanitation sector to anticipate demand and offer solutions ahead of the competition.</p>
+              </div>
+            </div>
+            <div class="diff-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="diff-num">03</div>
+              <div class="diff-info">
+                <h4>Specialized Technical Support</h4>
+                <p>A highly qualified technical team for consulting, sizing, implementation, and after-sales service for all equipment.</p>
+              </div>
+            </div>
+            <div class="diff-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="diff-num">04</div>
+              <div class="diff-info">
+                <h4>Long-Term Partnership</h4>
+                <p>We build lasting relationships with clients and suppliers, based on trust, transparency, and real results.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="diferenciais-visual" data-aos="fade-left">
+          <div class="diff-visual-card">
+            <div class="diff-icon-wrap"><i class="fas fa-water"></i></div>
+            <div class="diff-metrics">
+              <div class="metric">
+                <div class="metric-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="40"/>
+                    <circle class="progress p97" cx="50" cy="50" r="40"/>
+                  </svg>
+                  <span>97%</span>
+                </div>
+                <p>Removal Efficiency</p>
+              </div>
+              <div class="metric">
+                <div class="metric-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="40"/>
+                    <circle class="progress p85" cx="50" cy="50" r="40"/>
+                  </svg>
+                  <span>85%</span>
+                </div>
+                <p>Cost Reduction</p>
+              </div>
+              <div class="metric">
+                <div class="metric-circle">
+                  <svg viewBox="0 0 100 100">
+                    <circle class="bg" cx="50" cy="50" r="40"/>
+                    <circle class="progress p99" cx="50" cy="50" r="40"/>
+                  </svg>
+                  <span>99%</span>
+                </div>
+                <p>Legal Compliance</p>
+              </div>
+            </div>
+            <div class="diff-bottom-tag">
+              <i class="fas fa-star"></i> Internationally certified technologies
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="parceiros" id="partners">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Our Portfolio</div>
+        <h2 class="section-title">International <span class="gradient-text">Partners</span></h2>
+        <p class="section-desc">We represent global industry leaders with technologies validated in the world's most demanding markets</p>
+      </div>
+
+      <div class="parceiros-cards" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- EMO France -->
+        <a href="https://www.emo-france.com" target="_blank" rel="noopener" class="parceiro-card">
+          <div class="parceiro-card-logo">
+            <img src="../images/logo-emo-france.png" alt="EMO France" />
+          </div>
+          <div class="parceiro-card-info">
+            <div class="parceiro-card-flag">🇫🇷 France</div>
+            <h3>EMO France</h3>
+            <p>French specialist in wastewater pre-treatment equipment: screening, grit removal, clarification, and sludge treatment with over 50 years of global experience.</p>
+            <ul class="parceiro-tags">
+              <li>Fine Screening</li>
+              <li>Compacting Screens</li>
+              <li>Grit Removal</li>
+              <li>Clarification</li>
+            </ul>
+            <span class="parceiro-link">Visit website <i class="fas fa-external-link-alt"></i></span>
+          </div>
+        </a>
+
+        <!-- Aqua-Aerobic Systems -->
+        <a href="https://aqua-aerobic.com" target="_blank" rel="noopener" class="parceiro-card">
+          <div class="parceiro-card-logo">
+            <img src="../images/logo-aqua-aerobic.png" alt="Aqua-Aerobic Systems" />
+          </div>
+          <div class="parceiro-card-info">
+            <div class="parceiro-card-flag">🇺🇸 United States</div>
+            <h3>Aqua-Aerobic Systems</h3>
+            <p>American leader in tertiary cloth media filtration, biological systems, and activated sludge. AquaDisk®, AquaDrum®, and AquaStorm™ technologies installed at thousands of WWTPs worldwide.</p>
+            <ul class="parceiro-tags">
+              <li>Cloth Media Filtration</li>
+              <li>AquaDisk® / AquaDrum®</li>
+              <li>Tertiary Treatment</li>
+              <li>Water Reuse</li>
+            </ul>
+            <span class="parceiro-link">Visit website <i class="fas fa-external-link-alt"></i></span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="segmentos-grid" data-aos="fade-up" data-aos-delay="300">
+        <div class="segmento">
+          <i class="fas fa-city"></i>
+          <h4>Municipal Sanitation</h4>
+          <p>Water and wastewater treatment plants</p>
+        </div>
+        <div class="segmento">
+          <i class="fas fa-industry"></i>
+          <h4>Industry</h4>
+          <p>Industrial wastewater treatment</p>
+        </div>
+        <div class="segmento">
+          <i class="fas fa-seedling"></i>
+          <h4>Agribusiness</h4>
+          <p>Irrigation and agricultural reuse</p>
+        </div>
+        <div class="segmento">
+          <i class="fas fa-building"></i>
+          <h4>Commercial &amp; Buildings</h4>
+          <p>Compact and efficient systems</p>
+        </div>
+        <div class="segmento">
+          <i class="fas fa-flask"></i>
+          <h4>Pharma &amp; Food</h4>
+          <p>Ultrapure water and processes</p>
+        </div>
+        <div class="segmento">
+          <i class="fas fa-hard-hat"></i>
+          <h4>Mining &amp; Oil &amp; Gas</h4>
+          <p>High complexity and high volume</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box" data-aos="zoom-in">
+        <div class="cta-left">
+          <h2>Ready to transform your water treatment operation?</h2>
+          <p>Our technical team is available to evaluate your needs and present the best solutions available on the global market.</p>
+        </div>
+        <div class="cta-right">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-comments"></i> Request a Free Consultation
+          </a>
+          <span class="cta-note"><i class="fas fa-check-circle"></i> No commitment · Response within 24h</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contato" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Let's <span class="gradient-text">Talk</span></h2>
+        <p class="section-desc">Fill in the form and our team will get back to you within 24 hours</p>
+      </div>
+
+      <div class="contato-grid">
+        <div class="contato-info" data-aos="fade-right">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div><h4>Email</h4><p>contato@3cime.com.br</p></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div><h4>Phone</h4><p>+55 11 2361-6321</p></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Rua Quintana, 887 - Suite 43<br>Brooklin Novo · São Paulo - SP<br>ZIP 04569-011 · Brazil</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fab fa-linkedin"></i></div>
+            <div><h4>LinkedIn</h4><p>3CIME Water Solutions</p></div>
+          </div>
+          <div class="contato-map">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>Brooklin Novo · São Paulo · SP · Brazil</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-form-wrap" data-aos="fade-left">
+          <form class="contato-form" id="contatoForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Full Name *</label>
+                <input type="text" id="nome" name="nome" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="empresa">Company</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Your company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone">Phone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="+55 (11) 9..." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="segmento">Industry Segment</label>
+              <select id="segmento" name="segmento">
+                <option value="">Select your segment</option>
+                <option value="saneamento">Municipal Sanitation</option>
+                <option value="industria">Industry</option>
+                <option value="agronegocio">Agribusiness</option>
+                <option value="comercial">Commercial / Buildings</option>
+                <option value="farmaceutico">Pharma / Food</option>
+                <option value="mineracao">Mining / Oil &amp; Gas</option>
+                <option value="outro">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="solucao">Technology of Interest</label>
+              <select id="solucao" name="solucao">
+                <option value="">Select a technology</option>
+
+                <optgroup label="⬤  Cloth Media Filtration">
+                  <option value="aquadisk">AquaDisk® — Disc filter for concrete channel</option>
+                  <option value="aqua-minidisk">Aqua MiniDisk® — Compact version</option>
+                  <option value="aqua-megadisk">Aqua MegaDisk® — High capacity municipal</option>
+                  <option value="aquaprime">AquaPrime® — Advanced primary treatment</option>
+                  <option value="aquastorm">AquaStorm™ — Stormwater and runoff</option>
+                  <option value="aqua-diamond">Aqua Diamond® — High-efficiency geometry</option>
+                  <option value="aquadrum">AquaDrum® — Self-contained rotary drum</option>
+                </optgroup>
+
+                <optgroup label="⬤  Membrane Systems">
+                  <option value="aquamb-process">AquaMB Process® — Cloth + ultrafiltration</option>
+                  <option value="aqua-mbr">Aqua-Aerobic® MBR — Membrane bioreactor</option>
+                  <option value="aqua-multibore-c">Aqua MultiBore® C Series — Ceramic membranes</option>
+                  <option value="aqua-multibore-p">Aqua MultiBore® P Series — Polymeric membranes</option>
+                </optgroup>
+
+                <optgroup label="⬤  Sludge Thickening">
+                  <option value="gbt-omega">GBT — Gravity Belt Thickener OMEGA</option>
+                  <option value="daf">DAF — Dissolved Air Flotation</option>
+                </optgroup>
+
+                <optgroup label="⬤  Sludge Dewatering">
+                  <option value="bfp">Belt Filter Press — OMEGA series</option>
+                  <option value="screw-press">Screw Press</option>
+                  <option value="sludge-dryer">Sludge Dryer — Low temperature</option>
+                </optgroup>
+
+                <option value="outro">Other / Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Message *</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Describe your need or question..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note"><i class="fas fa-lock"></i> Your data is protected and will not be shared.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out! Our team will get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <img src="../images/logo-3cime.png" alt="3CIME Water Solutions" class="logo-img logo-img--footer" />
+          </a>
+          <p class="footer-brand-desc">International disruptive technologies for water and wastewater treatment, aligned with the real demands of the Brazilian market.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About 3CIME</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#differentials">Why Us</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Technology Portfolio</h4>
+          <ul>
+            <li class="footer-nicho-label"><i class="fas fa-filter"></i> Cloth Media Filtration</li>
+            <li><a href="../produtos/aquadisk.html">AquaDisk®</a></li>
+            <li><a href="../produtos/aqua-minidisk.html">Aqua MiniDisk®</a></li>
+            <li><a href="../produtos/aqua-megadisk.html">Aqua MegaDisk®</a></li>
+            <li><a href="../produtos/aquaprime.html">AquaPrime®</a></li>
+            <li><a href="../produtos/aquastorm.html">AquaStorm™</a></li>
+            <li><a href="../produtos/aqua-diamond.html">Aqua Diamond®</a></li>
+            <li><a href="../produtos/aquadrum.html">AquaDrum®</a></li>
+            <li class="footer-nicho-label"><i class="fas fa-circle-notch"></i> Membrane Systems</li>
+            <li><a href="../produtos/aquamb-process.html">AquaMB Process®</a></li>
+            <li><a href="../produtos/aqua-mbr.html">Aqua-Aerobic® MBR</a></li>
+            <li><a href="../produtos/aqua-multibore.html">Aqua MultiBore® C &amp; P Series</a></li>
+            <li class="footer-nicho-label"><i class="fas fa-compress-arrows-alt"></i> Sludge Thickening</li>
+            <li><a href="../produtos/emo-espessamento-lodo.html">GBT — Gravity Belt Thickener OMEGA</a></li>
+            <li><a href="../produtos/emo-espessamento-lodo.html#daf">DAF — Dissolved Air Flotation</a></li>
+            <li class="footer-nicho-label"><i class="fas fa-fire-flame-curved"></i> Sludge Dewatering</li>
+            <li><a href="../produtos/emo-desaguamento-bfp.html">Belt Filter Press</a></li>
+            <li><a href="../produtos/emo-desaguamento-screw.html">Screw Press</a></li>
+            <li><a href="../produtos/emo-desaguamento-dryer.html">Sludge Dryer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Receive news about water treatment technologies</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="you@email.com" required />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="footer-cert">
+            <span><i class="fas fa-shield-alt"></i> Data protected — LGPD / GDPR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 3CIME Water Solutions. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
